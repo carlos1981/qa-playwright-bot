@@ -1,0 +1,1181 @@
+--- INICIO EJECUCIÓN 2026-03-02 09:00:01 ---
+[zubi] Ejecutando...
+[zubi] ✅ PASÓ
+[zubicapital] Ejecutando...
+[zubicapital] ✅ PASÓ
+[matteco] Ejecutando...
+[matteco] ✅ PASÓ
+[zubicities] Ejecutando...
+[zubicities] ❌ FALLÓ
+
+Running 3 tests using 1 worker
+
+[1A[2K[1/3] [zubicities] › tests/zubicities/zubicities.spec.js:48:7 › Zubi Cities - Promociones y Blog › Madreselva: Formulario funciona
+[1A[2K[zubicities] › tests/zubicities/zubicities.spec.js:48:7 › Zubi Cities - Promociones y Blog › Madreselva: Formulario funciona
+Navegando a /promociones-sostenibles/madreselva/...
+
+[1A[2KRellenando formulario de información...
+
+[1A[2KEnviando...
+
+[1A[2K[2/3] [zubicities] › tests/zubicities/zubicities.spec.js:48:7 › Zubi Cities - Promociones y Blog › Madreselva: Formulario funciona (retry #1)
+[1A[2KNavegando a /promociones-sostenibles/madreselva/...
+
+[1A[2KRellenando formulario de información...
+
+[1A[2KEnviando...
+
+[1A[2K  1) [zubicities] › tests/zubicities/zubicities.spec.js:48:7 › Zubi Cities - Promociones y Blog › Madreselva: Formulario funciona 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForRequest: Test timeout of 30000ms exceeded.
+
+      31 |     // PREPARAMOS LA INTERCEPCIÓN DE RED
+      32 |     // Como el form va a 'php/validation.php', esperamos a ver esa petición
+    > 33 |     const requestPromise = page.waitForRequest(request => 
+         |                                 ^
+      34 |       request.url().includes('php/validation.php') && request.method() === 'POST'
+      35 |     );
+      36 |
+        at rellenarFormulario (/root/mi-bot/tests/zubicities/zubicities.spec.js:33:33)
+        at /root/mi-bot/tests/zubicities/zubicities.spec.js:49:5
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.submit-btn.envioclase')[22m
+    [2m    - locator resolved to <input name="" type="submit" value="ENVIAR" class="submit-btn envioclase"/>[22m
+    [2m  - attempting click action[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not stable[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not stable[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is not stable[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - element is outside of the viewport[22m
+    [2m  9 × retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m      - waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m      - waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <button type="button" class="btn btn-secondary" onclick="configurarPopCookies()">Configurar cookies</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m      - waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <button type="button" class="btn btn-secondary" onclick="configurarPopCookies()">Configurar cookies</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m      - waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <button type="button" class="btn btn-secondary" onclick="configurarPopCookies()">Configurar cookies</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+
+
+      35 |     );
+      36 |
+    > 37 |     await page.click('.submit-btn.envioclase');
+         |                ^
+      38 |
+      39 |     // Esperamos a que salga la petición
+      40 |     const request = await requestPromise;
+        at rellenarFormulario (/root/mi-bot/tests/zubicities/zubicities.spec.js:37:16)
+        at /root/mi-bot/tests/zubicities/zubicities.spec.js:49:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubicities-zubicities-Zubi-6d96a-reselva-Formulario-funciona-zubicities/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubicities-zubicities-Zubi-6d96a-reselva-Formulario-funciona-zubicities/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForRequest: Test timeout of 30000ms exceeded.
+
+      31 |     // PREPARAMOS LA INTERCEPCIÓN DE RED
+      32 |     // Como el form va a 'php/validation.php', esperamos a ver esa petición
+    > 33 |     const requestPromise = page.waitForRequest(request => 
+         |                                 ^
+      34 |       request.url().includes('php/validation.php') && request.method() === 'POST'
+      35 |     );
+      36 |
+        at rellenarFormulario (/root/mi-bot/tests/zubicities/zubicities.spec.js:33:33)
+        at /root/mi-bot/tests/zubicities/zubicities.spec.js:49:5
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.submit-btn.envioclase')[22m
+    [2m    - locator resolved to <input name="" type="submit" value="ENVIAR" class="submit-btn envioclase"/>[22m
+    [2m  - attempting click action[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <button type="button" class="btn btn-secondary" onclick="configurarPopCookies()">Configurar cookies</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not stable[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    3 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m    8 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <button type="button" class="btn btn-secondary" onclick="configurarPopCookies()">Configurar cookies</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m      - waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <button type="button" class="btn btn-secondary" onclick="configurarPopCookies()">Configurar cookies</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m      - waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <button type="button" class="btn btn-secondary" onclick="configurarPopCookies()">Configurar cookies</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m      - waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - <button type="button" class="btn btn-secondary" onclick="configurarPopCookies()">Configurar cookies</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+
+
+      35 |     );
+      36 |
+    > 37 |     await page.click('.submit-btn.envioclase');
+         |                ^
+      38 |
+      39 |     // Esperamos a que salga la petición
+      40 |     const request = await requestPromise;
+        at rellenarFormulario (/root/mi-bot/tests/zubicities/zubicities.spec.js:37:16)
+        at /root/mi-bot/tests/zubicities/zubicities.spec.js:49:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubicities-zubicities-Zubi-6d96a-reselva-Formulario-funciona-zubicities-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubicities-zubicities-Zubi-6d96a-reselva-Formulario-funciona-zubicities-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/zubicities-zubicities-Zubi-6d96a-reselva-Formulario-funciona-zubicities-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/zubicities-zubicities-Zubi-6d96a-reselva-Formulario-funciona-zubicities-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[3/3] [zubicities] › tests/zubicities/zubicities.spec.js:53:7 › Zubi Cities - Promociones y Blog › Pinea: Formulario funciona
+[1A[2K[zubicities] › tests/zubicities/zubicities.spec.js:53:7 › Zubi Cities - Promociones y Blog › Pinea: Formulario funciona
+Navegando a /promociones-sostenibles/pinea/...
+
+[1A[2KRellenando formulario de información...
+
+[1A[2KEnviando...
+
+[1A[2K[4/3] (retries) [zubicities] › tests/zubicities/zubicities.spec.js:53:7 › Zubi Cities - Promociones y Blog › Pinea: Formulario funciona (retry #1)
+[1A[2KNavegando a /promociones-sostenibles/pinea/...
+
+[1A[2KRellenando formulario de información...
+
+[1A[2KEnviando...
+
+[1A[2K  2) [zubicities] › tests/zubicities/zubicities.spec.js:53:7 › Zubi Cities - Promociones y Blog › Pinea: Formulario funciona 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForRequest: Test timeout of 30000ms exceeded.
+
+      31 |     // PREPARAMOS LA INTERCEPCIÓN DE RED
+      32 |     // Como el form va a 'php/validation.php', esperamos a ver esa petición
+    > 33 |     const requestPromise = page.waitForRequest(request => 
+         |                                 ^
+      34 |       request.url().includes('php/validation.php') && request.method() === 'POST'
+      35 |     );
+      36 |
+        at rellenarFormulario (/root/mi-bot/tests/zubicities/zubicities.spec.js:33:33)
+        at /root/mi-bot/tests/zubicities/zubicities.spec.js:54:5
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.submit-btn.envioclase')[22m
+    [2m    - locator resolved to <input name="" type="submit" value="ENVIAR" class="submit-btn envioclase"/>[22m
+    [2m  - attempting click action[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not stable[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not stable[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is not stable[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - element is outside of the viewport[22m
+    [2m  10 × retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <button type="button" data-bs-dismiss="modal" onclick="aceptoCookies()" class="btn btn-secondary">ACEPTAR COOKIES</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <button type="button" data-bs-dismiss="modal" onclick="aceptoCookies()" class="btn btn-secondary">ACEPTAR COOKIES</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <button type="button" data-bs-dismiss="modal" onclick="aceptoCookies()" class="btn btn-secondary">ACEPTAR COOKIES</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - <button type="button" data-bs-dismiss="modal" onclick="aceptoCookies()" class="btn btn-secondary">ACEPTAR COOKIES</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+
+
+      35 |     );
+      36 |
+    > 37 |     await page.click('.submit-btn.envioclase');
+         |                ^
+      38 |
+      39 |     // Esperamos a que salga la petición
+      40 |     const request = await requestPromise;
+        at rellenarFormulario (/root/mi-bot/tests/zubicities/zubicities.spec.js:37:16)
+        at /root/mi-bot/tests/zubicities/zubicities.spec.js:54:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubicities-zubicities-Zubi-7a2bb-g-Pinea-Formulario-funciona-zubicities/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubicities-zubicities-Zubi-7a2bb-g-Pinea-Formulario-funciona-zubicities/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.waitForRequest: Test timeout of 30000ms exceeded.
+
+      31 |     // PREPARAMOS LA INTERCEPCIÓN DE RED
+      32 |     // Como el form va a 'php/validation.php', esperamos a ver esa petición
+    > 33 |     const requestPromise = page.waitForRequest(request => 
+         |                                 ^
+      34 |       request.url().includes('php/validation.php') && request.method() === 'POST'
+      35 |     );
+      36 |
+        at rellenarFormulario (/root/mi-bot/tests/zubicities/zubicities.spec.js:33:33)
+        at /root/mi-bot/tests/zubicities/zubicities.spec.js:54:5
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.submit-btn.envioclase')[22m
+    [2m    - locator resolved to <input name="" type="submit" value="ENVIAR" class="submit-btn envioclase"/>[22m
+    [2m  - attempting click action[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is visible, enabled and stable[22m
+    [2m      - scrolling into view if needed[22m
+    [2m      - done scrolling[22m
+    [2m      - <button type="button" data-bs-dismiss="modal" onclick="aceptoCookies()" class="btn btn-secondary">ACEPTAR COOKIES</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> intercepts pointer events[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 100ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is not stable[22m
+    [2m  - retrying click action[22m
+    [2m    - waiting 100ms[22m
+    [2m    10 × waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <button type="button" data-bs-dismiss="modal" onclick="aceptoCookies()" class="btn btn-secondary">ACEPTAR COOKIES</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <button type="button" data-bs-dismiss="modal" onclick="aceptoCookies()" class="btn btn-secondary">ACEPTAR COOKIES</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m       - waiting for element to be visible, enabled and stable[22m
+    [2m       - element is visible, enabled and stable[22m
+    [2m       - scrolling into view if needed[22m
+    [2m       - done scrolling[22m
+    [2m       - <button type="button" data-bs-dismiss="modal" onclick="aceptoCookies()" class="btn btn-secondary">ACEPTAR COOKIES</button> from <div tabindex="-1" role="dialog" id="PopCookies" aria-modal="true" class="modal fade show" data-bs-keyboard="false" data-bs-backdrop="static" aria-labelledby="staticBackdropLabel">…</div> subtree intercepts pointer events[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+
+
+      35 |     );
+      36 |
+    > 37 |     await page.click('.submit-btn.envioclase');
+         |                ^
+      38 |
+      39 |     // Esperamos a que salga la petición
+      40 |     const request = await requestPromise;
+        at rellenarFormulario (/root/mi-bot/tests/zubicities/zubicities.spec.js:37:16)
+        at /root/mi-bot/tests/zubicities/zubicities.spec.js:54:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubicities-zubicities-Zubi-7a2bb-g-Pinea-Formulario-funciona-zubicities-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubicities-zubicities-Zubi-7a2bb-g-Pinea-Formulario-funciona-zubicities-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/zubicities-zubicities-Zubi-7a2bb-g-Pinea-Formulario-funciona-zubicities-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/zubicities-zubicities-Zubi-7a2bb-g-Pinea-Formulario-funciona-zubicities-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[5/3] (retries) [zubicities] › tests/zubicities/zubicities.spec.js:58:7 › Zubi Cities - Promociones y Blog › Blog: Existen entradas publicadas
+[1A[2K[zubicities] › tests/zubicities/zubicities.spec.js:58:7 › Zubi Cities - Promociones y Blog › Blog: Existen entradas publicadas
+✅ Entradas del blog detectadas.
+
+[1A[2K  2 failed
+    [zubicities] › tests/zubicities/zubicities.spec.js:48:7 › Zubi Cities - Promociones y Blog › Madreselva: Formulario funciona 
+    [zubicities] › tests/zubicities/zubicities.spec.js:53:7 › Zubi Cities - Promociones y Blog › Pinea: Formulario funciona 
+  1 passed (2.6m)
+[fundacionfelisa] Ejecutando...
+[fundacionfelisa] ❌ FALLÓ
+Error: No tests found
+
+[1A[2K[woodea] Ejecutando...
+[woodea] ❌ FALLÓ
+
+Running 5 tests using 1 worker
+
+[1A[2K[1/5] [woodea] › tests/woodea/woodea.spec.js:6:7 › Woodea - Secciones Internas › Somos Woodea: La página carga correctamente
+[1A[2K[2/5] [woodea] › tests/woodea/woodea.spec.js:6:7 › Woodea - Secciones Internas › Somos Woodea: La página carga correctamente (retry #1)
+[1A[2K  1) [woodea] › tests/woodea/woodea.spec.js:6:7 › Woodea - Secciones Internas › Somos Woodea: La página carga correctamente 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('h1, h2').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('h1, h2').first()[22m
+    [2m    9 × locator resolved to <h1 class="page-header_title">ERROR 404</h1>[22m
+    [2m      - unexpected value "hidden"[22m
+
+
+      11 |     
+      12 |     // Buscamos algún título H1 o H2 para confirmar que hay texto
+    > 13 |     await expect(page.locator('h1, h2').first()).toBeVisible();
+         |                                                  ^
+      14 |     
+      15 |     console.log('✅ Página Somos Woodea cargada.');
+      16 |   });
+        at /root/mi-bot/tests/woodea/woodea.spec.js:13:50
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-685fa--página-carga-correctamente-woodea/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-685fa--página-carga-correctamente-woodea/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('h1, h2').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('h1, h2').first()[22m
+    [2m    8 × locator resolved to <h1 class="page-header_title">ERROR 404</h1>[22m
+    [2m      - unexpected value "hidden"[22m
+
+
+      11 |     
+      12 |     // Buscamos algún título H1 o H2 para confirmar que hay texto
+    > 13 |     await expect(page.locator('h1, h2').first()).toBeVisible();
+         |                                                  ^
+      14 |     
+      15 |     console.log('✅ Página Somos Woodea cargada.');
+      16 |   });
+        at /root/mi-bot/tests/woodea/woodea.spec.js:13:50
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-685fa--página-carga-correctamente-woodea-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-685fa--página-carga-correctamente-woodea-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-685fa--página-carga-correctamente-woodea-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/woodea-woodea-Woodea---Sec-685fa--página-carga-correctamente-woodea-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[3/5] [woodea] › tests/woodea/woodea.spec.js:19:7 › Woodea - Secciones Internas › Blog: Existen artículos publicados
+[1A[2K[4/5] [woodea] › tests/woodea/woodea.spec.js:19:7 › Woodea - Secciones Internas › Blog: Existen artículos publicados (retry #1)
+[1A[2K  2) [woodea] › tests/woodea/woodea.spec.js:19:7 › Woodea - Secciones Internas › Blog: Existen artículos publicados 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('article').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('article').first()[22m
+
+
+      28 |     // const posts = page.locator('a[href*="/blog/"]:not([href$="/blog/"])');
+      29 |
+    > 30 |     await expect(posts.first()).toBeVisible();
+         |                                 ^
+      31 |     console.log('✅ Artículos del blog detectados.');
+      32 |   });
+      33 |
+        at /root/mi-bot/tests/woodea/woodea.spec.js:30:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-ae22a-xisten-artículos-publicados-woodea/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-ae22a-xisten-artículos-publicados-woodea/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('article').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('article').first()[22m
+
+
+      28 |     // const posts = page.locator('a[href*="/blog/"]:not([href$="/blog/"])');
+      29 |
+    > 30 |     await expect(posts.first()).toBeVisible();
+         |                                 ^
+      31 |     console.log('✅ Artículos del blog detectados.');
+      32 |   });
+      33 |
+        at /root/mi-bot/tests/woodea/woodea.spec.js:30:33
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-ae22a-xisten-artículos-publicados-woodea-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-ae22a-xisten-artículos-publicados-woodea-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-ae22a-xisten-artículos-publicados-woodea-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/woodea-woodea-Woodea---Sec-ae22a-xisten-artículos-publicados-woodea-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[5/5] [woodea] › tests/woodea/woodea.spec.js:35:7 › Woodea - Secciones Internas › Podcast: Existen episodios clickables
+[1A[2K[6/5] (retries) [woodea] › tests/woodea/woodea.spec.js:35:7 › Woodea - Secciones Internas › Podcast: Existen episodios clickables (retry #1)
+[1A[2K  3) [woodea] › tests/woodea/woodea.spec.js:35:7 › Woodea - Secciones Internas › Podcast: Existen episodios clickables 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('a[href*="/podcast/"][href*="-"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('a[href*="/podcast/"][href*="-"]').first()[22m
+
+
+      42 |     const episodio = page.locator('a[href*="/podcast/"][href*="-"]'); 
+      43 |     
+    > 44 |     await expect(episodio.first()).toBeVisible();
+         |                                    ^
+      45 |     console.log('✅ Episodios del podcast encontrados.');
+      46 |   });
+      47 |
+        at /root/mi-bot/tests/woodea/woodea.spec.js:44:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-1109b-xisten-episodios-clickables-woodea/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-1109b-xisten-episodios-clickables-woodea/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('a[href*="/podcast/"][href*="-"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('a[href*="/podcast/"][href*="-"]').first()[22m
+
+
+      42 |     const episodio = page.locator('a[href*="/podcast/"][href*="-"]'); 
+      43 |     
+    > 44 |     await expect(episodio.first()).toBeVisible();
+         |                                    ^
+      45 |     console.log('✅ Episodios del podcast encontrados.');
+      46 |   });
+      47 |
+        at /root/mi-bot/tests/woodea/woodea.spec.js:44:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-1109b-xisten-episodios-clickables-woodea-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-1109b-xisten-episodios-clickables-woodea-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-1109b-xisten-episodios-clickables-woodea-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/woodea-woodea-Woodea---Sec-1109b-xisten-episodios-clickables-woodea-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[7/5] (retries) [woodea] › tests/woodea/woodea.spec.js:49:7 › Woodea - Secciones Internas › Contacto: Formulario se envía correctamente
+[1A[2K[woodea] › tests/woodea/woodea.spec.js:49:7 › Woodea - Secciones Internas › Contacto: Formulario se envía correctamente
+Rellenando formulario de contacto...
+
+[1A[2K[8/5] (retries) [woodea] › tests/woodea/woodea.spec.js:49:7 › Woodea - Secciones Internas › Contacto: Formulario se envía correctamente (retry #1)
+[1A[2KRellenando formulario de contacto...
+
+[1A[2K  4) [woodea] › tests/woodea/woodea.spec.js:49:7 › Woodea - Secciones Internas › Contacto: Formulario se envía correctamente 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[name="text-name-surname"]')[22m
+
+
+      53 |
+      54 |     // Campos de texto (usamos los 'name' del HTML)
+    > 55 |     await page.fill('input[name="text-name-surname"]', 'Test Bot Woodea');
+         |                ^
+      56 |     await page.fill('input[name="email"]', 'test-qa@woodea.es');
+      57 |     await page.fill('input[name="nombre-empresa"]', 'Testing SL');
+      58 |     await page.fill('input[name="actividad-empresa"]', 'Automatización');
+        at /root/mi-bot/tests/woodea/woodea.spec.js:55:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-e06ee-ario-se-envía-correctamente-woodea/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-e06ee-ario-se-envía-correctamente-woodea/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[name="text-name-surname"]')[22m
+
+
+      53 |
+      54 |     // Campos de texto (usamos los 'name' del HTML)
+    > 55 |     await page.fill('input[name="text-name-surname"]', 'Test Bot Woodea');
+         |                ^
+      56 |     await page.fill('input[name="email"]', 'test-qa@woodea.es');
+      57 |     await page.fill('input[name="nombre-empresa"]', 'Testing SL');
+      58 |     await page.fill('input[name="actividad-empresa"]', 'Automatización');
+        at /root/mi-bot/tests/woodea/woodea.spec.js:55:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-e06ee-ario-se-envía-correctamente-woodea-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-e06ee-ario-se-envía-correctamente-woodea-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-e06ee-ario-se-envía-correctamente-woodea-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/woodea-woodea-Woodea---Sec-e06ee-ario-se-envía-correctamente-woodea-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[9/5] (retries) [woodea] › tests/woodea/woodea.spec.js:82:7 › Woodea - Secciones Internas › Formulario de contacto (Home) funciona correctamente
+[1A[2K[woodea] › tests/woodea/woodea.spec.js:82:7 › Woodea - Secciones Internas › Formulario de contacto (Home) funciona correctamente
+Cargando Woodea.es...
+
+[1A[2KRellenando datos...
+
+[1A[2K[10/5] (retries) [woodea] › tests/woodea/woodea.spec.js:82:7 › Woodea - Secciones Internas › Formulario de contacto (Home) funciona correctamente (retry #1)
+[1A[2KCargando Woodea.es...
+
+[1A[2KRellenando datos...
+
+[1A[2K  5) [woodea] › tests/woodea/woodea.spec.js:82:7 › Woodea - Secciones Internas › Formulario de contacto (Home) funciona correctamente 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[name="text-name-surname"]')[22m
+
+
+      89 |     console.log('Rellenando datos...');
+      90 |     
+    > 91 |     await page.fill('input[name="text-name-surname"]', 'Test Automático QA'); // Nombre
+         |                ^
+      92 |     await page.fill('input[name="email"]', 'qa-bot@woodea.es'); // Email
+      93 |     
+      94 |     // Estos son opcionales, pero mejor rellenarlos para que parezca real
+        at /root/mi-bot/tests/woodea/woodea.spec.js:91:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-7e760-Home-funciona-correctamente-woodea/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-7e760-Home-funciona-correctamente-woodea/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[name="text-name-surname"]')[22m
+
+
+      89 |     console.log('Rellenando datos...');
+      90 |     
+    > 91 |     await page.fill('input[name="text-name-surname"]', 'Test Automático QA'); // Nombre
+         |                ^
+      92 |     await page.fill('input[name="email"]', 'qa-bot@woodea.es'); // Email
+      93 |     
+      94 |     // Estos son opcionales, pero mejor rellenarlos para que parezca real
+        at /root/mi-bot/tests/woodea/woodea.spec.js:91:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-7e760-Home-funciona-correctamente-woodea-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/woodea-woodea-Woodea---Sec-7e760-Home-funciona-correctamente-woodea-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/woodea-woodea-Woodea---Sec-7e760-Home-funciona-correctamente-woodea-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/woodea-woodea-Woodea---Sec-7e760-Home-funciona-correctamente-woodea-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  5 failed
+    [woodea] › tests/woodea/woodea.spec.js:6:7 › Woodea - Secciones Internas › Somos Woodea: La página carga correctamente 
+    [woodea] › tests/woodea/woodea.spec.js:19:7 › Woodea - Secciones Internas › Blog: Existen artículos publicados 
+    [woodea] › tests/woodea/woodea.spec.js:35:7 › Woodea - Secciones Internas › Podcast: Existen episodios clickables 
+    [woodea] › tests/woodea/woodea.spec.js:49:7 › Woodea - Secciones Internas › Contacto: Formulario se envía correctamente 
+    [woodea] › tests/woodea/woodea.spec.js:82:7 › Woodea - Secciones Internas › Formulario de contacto (Home) funciona correctamente 
+[zubilabs] Ejecutando...
+[zubilabs] ❌ FALLÓ
+
+Running 5 tests using 1 worker
+
+[1A[2K[1/5] [zubilabs] › tests/zubilabs/zubilabs.spec.js:5:7 › ZubiLabs - Newsletter › Formulario de suscripción (Home) funciona
+[1A[2K[zubilabs] › tests/zubilabs/zubilabs.spec.js:5:7 › ZubiLabs - Newsletter › Formulario de suscripción (Home) funciona
+Cargando Zubilabs.com...
+
+[1A[2KRellenando nombre...
+
+[1A[2K[2/5] [zubilabs] › tests/zubilabs/zubilabs.spec.js:5:7 › ZubiLabs - Newsletter › Formulario de suscripción (Home) funciona (retry #1)
+[1A[2KCargando Zubilabs.com...
+
+[1A[2KRellenando nombre...
+
+[1A[2K  1) [zubilabs] › tests/zubilabs/zubilabs.spec.js:5:7 › ZubiLabs - Newsletter › Formulario de suscripción (Home) funciona 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[name="your-name"]')[22m
+
+
+      13 |     
+      14 |     console.log('Rellenando nombre...');
+    > 15 |     await page.fill('input[name="your-name"]', 'Test Bot');
+         |                ^
+      16 |
+      17 |     console.log('Rellenando email...');
+      18 |     await page.fill('input[name="your-email"]', 'test-bot@zubilabs.com');
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:15:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-ZubiLabs-c8dd5-e-suscripción-Home-funciona-zubilabs/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-ZubiLabs-c8dd5-e-suscripción-Home-funciona-zubilabs/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[name="your-name"]')[22m
+
+
+      13 |     
+      14 |     console.log('Rellenando nombre...');
+    > 15 |     await page.fill('input[name="your-name"]', 'Test Bot');
+         |                ^
+      16 |
+      17 |     console.log('Rellenando email...');
+      18 |     await page.fill('input[name="your-email"]', 'test-bot@zubilabs.com');
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:15:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-ZubiLabs-c8dd5-e-suscripción-Home-funciona-zubilabs-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-ZubiLabs-c8dd5-e-suscripción-Home-funciona-zubilabs-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-ZubiLabs-c8dd5-e-suscripción-Home-funciona-zubilabs-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/zubilabs-zubilabs-ZubiLabs-c8dd5-e-suscripción-Home-funciona-zubilabs-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[3/5] [zubilabs] › tests/zubilabs/zubilabs.spec.js:49:7 › Zubi Labs - Navegación y Contacto › Menú hamburguesa abre y permite navegar a Sobre Nosotros
+[1A[2K[zubilabs] › tests/zubilabs/zubilabs.spec.js:49:7 › Zubi Labs - Navegación y Contacto › Menú hamburguesa abre y permite navegar a Sobre Nosotros
+Abriendo menú lateral...
+
+[1A[2K[4/5] [zubilabs] › tests/zubilabs/zubilabs.spec.js:49:7 › Zubi Labs - Navegación y Contacto › Menú hamburguesa abre y permite navegar a Sobre Nosotros (retry #1)
+[1A[2KAbriendo menú lateral...
+
+[1A[2K  2) [zubilabs] › tests/zubilabs/zubilabs.spec.js:49:7 › Zubi Labs - Navegación y Contacto › Menú hamburguesa abre y permite navegar a Sobre Nosotros 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.open_side_menu i.fa-bars')[22m
+    [2m    - locator resolved to 3 elements. Proceeding with the first one: <i class="fas fa-bars"></i>[22m
+    [2m  - attempting click action[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not visible[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not visible[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    36 × waiting for element to be visible, enabled and stable[22m
+    [2m       - element is not visible[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+
+
+      52 |     // Clic en el icono de hamburguesa (fa-bars)
+      53 |     console.log('Abriendo menú lateral...');
+    > 54 |     await page.click('.open_side_menu i.fa-bars');
+         |                ^
+      55 |
+      56 |     // Esperamos a que el menú se despliegue y el enlace sea visible
+      57 |     // Buscamos el enlace por su texto exacto
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:54:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-bd0fc-te-navegar-a-Sobre-Nosotros-zubilabs/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-Zubi-Lab-bd0fc-te-navegar-a-Sobre-Nosotros-zubilabs/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.click: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('.open_side_menu i.fa-bars')[22m
+    [2m    - locator resolved to 3 elements. Proceeding with the first one: <i class="fas fa-bars"></i>[22m
+    [2m  - attempting click action[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not visible[22m
+    [2m    - retrying click action[22m
+    [2m    - waiting 20ms[22m
+    [2m    2 × waiting for element to be visible, enabled and stable[22m
+    [2m      - element is not visible[22m
+    [2m    - retrying click action[22m
+    [2m      - waiting 100ms[22m
+    [2m    24 × waiting for element to be visible, enabled and stable[22m
+    [2m       - element is not visible[22m
+    [2m     - retrying click action[22m
+    [2m       - waiting 500ms[22m
+
+
+      52 |     // Clic en el icono de hamburguesa (fa-bars)
+      53 |     console.log('Abriendo menú lateral...');
+    > 54 |     await page.click('.open_side_menu i.fa-bars');
+         |                ^
+      55 |
+      56 |     // Esperamos a que el menú se despliegue y el enlace sea visible
+      57 |     // Buscamos el enlace por su texto exacto
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:54:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-bd0fc-te-navegar-a-Sobre-Nosotros-zubilabs-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-Zubi-Lab-bd0fc-te-navegar-a-Sobre-Nosotros-zubilabs-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-bd0fc-te-navegar-a-Sobre-Nosotros-zubilabs-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/zubilabs-zubilabs-Zubi-Lab-bd0fc-te-navegar-a-Sobre-Nosotros-zubilabs-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[5/5] [zubilabs] › tests/zubilabs/zubilabs.spec.js:71:7 › Zubi Labs - Navegación y Contacto › Blog: Carga y tiene artículos clickables
+[1A[2K[6/5] (retries) [zubilabs] › tests/zubilabs/zubilabs.spec.js:71:7 › Zubi Labs - Navegación y Contacto › Blog: Carga y tiene artículos clickables (retry #1)
+[1A[2K  3) [zubilabs] › tests/zubilabs/zubilabs.spec.js:71:7 › Zubi Labs - Navegación y Contacto › Blog: Carga y tiene artículos clickables 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('article a').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('article a').first()[22m
+
+
+      80 |     // const articulo = page.locator('a[href*="cocircular-y-matteco"]');
+      81 |
+    > 82 |     await expect(articulo).toBeVisible();
+         |                            ^
+      83 |     console.log('✅ Se han encontrado artículos en el blog.');
+      84 |     
+      85 |     // Opcional: Hacer clic y verificar
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:82:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-648ee--tiene-artículos-clickables-zubilabs/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-Zubi-Lab-648ee--tiene-artículos-clickables-zubilabs/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('article a').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('article a').first()[22m
+
+
+      80 |     // const articulo = page.locator('a[href*="cocircular-y-matteco"]');
+      81 |
+    > 82 |     await expect(articulo).toBeVisible();
+         |                            ^
+      83 |     console.log('✅ Se han encontrado artículos en el blog.');
+      84 |     
+      85 |     // Opcional: Hacer clic y verificar
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:82:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-648ee--tiene-artículos-clickables-zubilabs-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-Zubi-Lab-648ee--tiene-artículos-clickables-zubilabs-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-648ee--tiene-artículos-clickables-zubilabs-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/zubilabs-zubilabs-Zubi-Lab-648ee--tiene-artículos-clickables-zubilabs-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[7/5] (retries) [zubilabs] › tests/zubilabs/zubilabs.spec.js:91:7 › Zubi Labs - Navegación y Contacto › Medios: Carga y tiene noticias clickables
+[1A[2K[8/5] (retries) [zubilabs] › tests/zubilabs/zubilabs.spec.js:91:7 › Zubi Labs - Navegación y Contacto › Medios: Carga y tiene noticias clickables (retry #1)
+[1A[2K  4) [zubilabs] › tests/zubilabs/zubilabs.spec.js:91:7 › Zubi Labs - Navegación y Contacto › Medios: Carga y tiene noticias clickables 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('a[href*="medios/"]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('a[href*="medios/"]').first()[22m
+    [2m    9 × locator resolved to <a data-relative_url="#cmplz-manage-consent-container" class="cmplz-link cmplz-manage-options cookie-statement" href="https://fundacionfelisa.org/medios/120-000-euros-a-la-recuperacion-de-valencia-tras-la-dana/#cmplz-manage-consent-container">Manage options</a>[22m
+    [2m      - unexpected value "hidden"[22m
+
+
+       99 |     // const noticia = page.locator('a[href*="kampe-lanza-un-bootcamp"]');
+      100 |
+    > 101 |     await expect(noticia).toBeVisible();
+          |                           ^
+      102 |     console.log('✅ Se han encontrado noticias en Medios.');
+      103 |   });
+      104 |
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:101:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-da7c4-y-tiene-noticias-clickables-zubilabs/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-Zubi-Lab-da7c4-y-tiene-noticias-clickables-zubilabs/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator:  locator('a[href*="medios/"]').first()
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('a[href*="medios/"]').first()[22m
+    [2m    8 × locator resolved to <a data-relative_url="#cmplz-manage-consent-container" class="cmplz-link cmplz-manage-options cookie-statement" href="https://fundacionfelisa.org/medios/120-000-euros-a-la-recuperacion-de-valencia-tras-la-dana/#cmplz-manage-consent-container">Manage options</a>[22m
+    [2m      - unexpected value "hidden"[22m
+
+
+       99 |     // const noticia = page.locator('a[href*="kampe-lanza-un-bootcamp"]');
+      100 |
+    > 101 |     await expect(noticia).toBeVisible();
+          |                           ^
+      102 |     console.log('✅ Se han encontrado noticias en Medios.');
+      103 |   });
+      104 |
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:101:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-da7c4-y-tiene-noticias-clickables-zubilabs-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-Zubi-Lab-da7c4-y-tiene-noticias-clickables-zubilabs-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-da7c4-y-tiene-noticias-clickables-zubilabs-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/zubilabs-zubilabs-Zubi-Lab-da7c4-y-tiene-noticias-clickables-zubilabs-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K[9/5] (retries) [zubilabs] › tests/zubilabs/zubilabs.spec.js:106:7 › Zubi Labs - Navegación y Contacto › Contacto: Formulario narrativo se envía correctamente
+[1A[2K[zubilabs] › tests/zubilabs/zubilabs.spec.js:106:7 › Zubi Labs - Navegación y Contacto › Contacto: Formulario narrativo se envía correctamente
+Rellenando formulario narrativo...
+
+[1A[2K[10/5] (retries) [zubilabs] › tests/zubilabs/zubilabs.spec.js:106:7 › Zubi Labs - Navegación y Contacto › Contacto: Formulario narrativo se envía correctamente (retry #1)
+[1A[2KRellenando formulario narrativo...
+
+[1A[2K  5) [zubilabs] › tests/zubilabs/zubilabs.spec.js:106:7 › Zubi Labs - Navegación y Contacto › Contacto: Formulario narrativo se envía correctamente 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[name="your-name"]')[22m
+
+
+      110 |     
+      111 |     // Nombre ("Hola, mi nombre es...")
+    > 112 |     await page.fill('input[name="your-name"]', 'Test Bot');
+          |                ^
+      113 |     
+      114 |     // Perfil ("y soy...")
+      115 |     await page.fill('input[name="perfil"]', 'un robot de QA');
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:112:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-00faa-tivo-se-envía-correctamente-zubilabs/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-Zubi-Lab-00faa-tivo-se-envía-correctamente-zubilabs/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: page.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('input[name="your-name"]')[22m
+
+
+      110 |     
+      111 |     // Nombre ("Hola, mi nombre es...")
+    > 112 |     await page.fill('input[name="your-name"]', 'Test Bot');
+          |                ^
+      113 |     
+      114 |     // Perfil ("y soy...")
+      115 |     await page.fill('input[name="perfil"]', 'un robot de QA');
+        at /root/mi-bot/tests/zubilabs/zubilabs.spec.js:112:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-00faa-tivo-se-envía-correctamente-zubilabs-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/zubilabs-zubilabs-Zubi-Lab-00faa-tivo-se-envía-correctamente-zubilabs-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/zubilabs-zubilabs-Zubi-Lab-00faa-tivo-se-envía-correctamente-zubilabs-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/zubilabs-zubilabs-Zubi-Lab-00faa-tivo-se-envía-correctamente-zubilabs-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[1A[2K  5 failed
+    [zubilabs] › tests/zubilabs/zubilabs.spec.js:5:7 › ZubiLabs - Newsletter › Formulario de suscripción (Home) funciona 
+    [zubilabs] › tests/zubilabs/zubilabs.spec.js:49:7 › Zubi Labs - Navegación y Contacto › Menú hamburguesa abre y permite navegar a Sobre Nosotros 
+    [zubilabs] › tests/zubilabs/zubilabs.spec.js:71:7 › Zubi Labs - Navegación y Contacto › Blog: Carga y tiene artículos clickables 
+    [zubilabs] › tests/zubilabs/zubilabs.spec.js:91:7 › Zubi Labs - Navegación y Contacto › Medios: Carga y tiene noticias clickables 
+    [zubilabs] › tests/zubilabs/zubilabs.spec.js:106:7 › Zubi Labs - Navegación y Contacto › Contacto: Formulario narrativo se envía correctamente 
