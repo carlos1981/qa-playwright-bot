@@ -25,4 +25,19 @@ test.describe('Matteco - Web', () => {
     console.log(`✅ Noticia encontrada: "${tituloNoticia}"`);
   });
 
+test('Impact: Existe enlace de LinkedIn de Manuel Quesada', async ({ page }) => {
+    // 1. Navegamos a la página de impact (asegúrate de que la URL es correcta)
+    await page.goto('/impact/', { waitUntil: 'networkidle' });
+
+    // 2. Buscamos el enlace usando el atributo href exacto
+    const linkLinkedin = page.locator('a[href="https://www.linkedin.com/in/manuel-quesada-vilar-6544a446/"]');
+
+    // 3. Hacemos scroll hasta el elemento por si la imagen tiene "lazy load"
+    await linkLinkedin.scrollIntoViewIfNeeded();
+
+    // 4. Verificamos que sea visible
+    await expect(linkLinkedin).toBeVisible();
+
+    console.log('✅ Enlace de LinkedIn de Manuel Quesada encontrado correctamente.');
+  });
 });
